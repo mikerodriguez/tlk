@@ -561,10 +561,10 @@ h4 {
   background-color: #FFF;
   border-bottom: #dbdbdb;
   padding: 20px;
-  display: flex;
   height: 80px; }
   .site-header .logo {
-    position: relative; }
+    position: relative;
+    min-width: 150px; }
     .site-header .logo svg {
       max-height: 150px;
       width: auto; }
@@ -576,7 +576,10 @@ h4 {
     .site-header .navigation .menu {
       list-style: none; }
       .site-header .navigation .menu li {
-        display: inline-block; }
+        display: inline-block;
+        margin-right: 10px; }
+        .site-header .navigation .menu li:last-child {
+          margin-right: none; }
         .site-header .navigation .menu li a {
           display: block;
           color: #333;

@@ -2,12 +2,13 @@
 	background-color: #FFF;
 	border-bottom: $color-gray-lines;
 	padding: $std-padding;
-	display: flex;
+	//display: flex;
 	height: 80px;
 	@extend .clear;
 
 	.logo{
 		position: relative;
+		min-width: 150px;
 		svg{
 			max-height: 150px;
 			width: auto;
@@ -25,6 +26,10 @@
 			list-style: none;
 			li{
 				display: inline-block;
+				margin-right: 10px;
+				&:last-child{
+					margin-right: none;
+				}
 				a{
 					display: block;
 					color: #333;
