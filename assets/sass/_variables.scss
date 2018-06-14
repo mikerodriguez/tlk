@@ -1,0 +1,51 @@
+/*
+ * 1. Colors
+ * 2. Fonts
+ * 3. Spacing
+ * 4. Grid
+ * 5. Breakpoints
+ * 6. Settings
+ */
+
+
+/*
+-- 1. Colors
+*/
+ /* Brand Colors */
+$tlk-blue: #54C2E5;
+
+/* General Colors */
+$color-gray-lines: #dbdbdb;
+$color-gray-light: #f4f4f4;
+$color-gray: #999;
+$color-gray-medium: #d7d7d7;
+$color-gray-dark: #444;
+$color-white: #fff;
+$color-black: #000;
+
+
+
+
+/*
+-- 2. Fonts
+*/
+/*// Google Fonts*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+
+$font-family: 'Open Sans';
+$font-color: $color-gray-dark;
+
+
+/*
+-- 3. Spacing
+*/
+
+/* Padding */
+$std-padding: 20px;
+
+$half-padding: $std-padding / 2;
+$double-padding: $std-padding * 2;
+
+
+
+$wrapper-width: 1170px;

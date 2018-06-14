@@ -1,0 +1,148 @@
+/* =Global Styles
+-------------------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: none;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+html, body{
+    background-color: #EEEEEE;
+    font-family: $font-family;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+}
+
+.no-scroll {
+    overflow-y: hidden;
+    position: fixed;
+    width: 100%;
+}
+.scroll {
+    @include scroll;
+}
+
+.wrapper{
+	width: 100%;
+	max-width: $wrapper-width;
+	margin: 0 auto;
+}
+.fleft{
+    float: left;
+}
+.fright{
+    float:right;
+}
+.reset{
+    margin: 0;
+    padding: 0;
+}
+.clearfix{
+	clear: both;
+}
+.clear:before,
+.clear:after {
+    content: " ";
+    display: table;
+
+}
+.clear:after{
+    clear: both;
+
+}
+.clear{
+    zoom: 1;
+}
+.entry-content{
+	
+}
+.center-narrow, .narrow-center{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.acf-map {
+	width: 100%;
+	height: 200px;
+	margin: 0;
+}
+
+/* fixes potential theme css conflict */
+.acf-map img {
+   max-width: inherit !important;
+}
+
+.page-container {
+    min-height: 800px;
+    padding: 20px;
+}
+.articlew-container {
+    min-height: 900px;
+}
+
+.article-container {
+    min-height: 800px;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+    color: #000;
+    font-weight: normal;
+}
+h1{
+    font-size: 36px;
+    line-height: 1.05em;
+}
+h2{
+    font-size: 28px;
+    line-height: 1.25em;
+}
+h3{
+    font-size: 21px;
+}
+h4{
+    font-size: 18px;
+}
+
+.entry-content{
+    padding: 10px;
+    font-size: 14px;
+    color: #000;
+    line-height: 1.6;
+    p{
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    a{
+        color: #000;
+    }
+    a.btn{
+        color: $color-white;
+    }
+}
+
+.video-container{
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+    }
+
+}

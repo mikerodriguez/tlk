@@ -1,0 +1,41 @@
+//Media Queries
+@mixin smallmobile {
+	@media only screen and (max-width: 325px){
+		@content;	
+	}
+}
+
+//Mobile
+@mixin mobile {
+	@media only screen and (max-width: 815px){
+		@content;	
+	}
+}
+
+
+//Tablet
+@mixin tablet {
+	@media only screen and (min-width: 816px) and (max-width: 1024px) {
+		@content;	
+	}
+}
+
+
+//Large Screens
+@mixin large {
+	@media only screen and (min-width: 1440px){
+		@content;	
+	}
+}
+
+
+@mixin convertrgba($color, $opacity: 0.3) {
+    background-color: $color; /* The Fallback */
+    background-color: rgba($color, $opacity);
+}
+
+
+@mixin scroll() {
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+}
