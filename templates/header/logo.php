@@ -1,5 +1,8 @@
 <div class="logo-container">
-    <svg width="247px" height="346px" viewBox="0 0 247 346" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <a href="<?php echo home_url(); ?>">
+        
+        <svg width="247px" height="346px" viewBox="0 0 247 346" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
         <polygon id="path-1" points="4.44861021e-05 0.868112765 246.473511 0.868112765 246.473511 338 4.44861021e-05 338"></polygon>
     </defs>
@@ -19,4 +22,17 @@
         </g>
     </g>
 </svg>
+
+
+
+
+
+
+
+
+
+    </a>
+
+
+
 </div>
