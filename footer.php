@@ -3,7 +3,7 @@
 </div>
 
 <div class="secondary-footer">
-	<div class="wrapper">secondary footer</div>
+	<div class="wrapper">secondary footer!</div>
 </div>
 
 

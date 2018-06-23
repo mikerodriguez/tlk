@@ -34,6 +34,19 @@
 
 
 
+<section class="home-usp"></section>
+
+
+<section class="home-feature-products"></section>
+
+
+<section class="home-cta-5050"></section>
+
+
+<section class="home-cta"></section>
+
+
+
 
 
 <?php get_footer(); ?>

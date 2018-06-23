@@ -16,11 +16,20 @@
 		.logo-container{
 			position: absolute;
 			top: -10px;
+			z-index: 10;
 		}
 	}
 
+	$duration: .2s;
+	$distance: 8px;
+	$easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+
 	.navigation{
 		margin: auto 0;
+		padding-top: 12px;
+		@include mobile{
+			display: none;
+		}
 		.menu{
 			@extend .reset;
 			list-style: none;
@@ -30,10 +39,69 @@
 				&:last-child{
 					margin-right: none;
 				}
+				a {
+				  font-size: 16px;
+				  color: #333;
+				  position: relative;
+				  font-weight: bold;
+				  text-transform: uppercase;
+				  text-decoration: none;
+				  padding-bottom: 8px;
+
+				   &:before,
+					&:after {
+						content: '';
+						position: absolute;
+						bottom: 2px;
+						left: 0; right: 0;
+						height: 4px;
+						background-color: $tlk-blue;
+					}
+					&:before {
+						opacity: 0;
+						transform: translateY(- $distance);
+						transition: transform 0s $easeOutBack, opacity 0s;
+					}
+					&:after {
+						opacity: 0;
+						transform: translateY($distance/2);
+						transition: transform $duration $easeOutBack, opacity $duration;
+					}
+					&:hover,
+					&:focus {
+						&:before,
+						&:after {
+							opacity: 1;
+							transform: translateY(0);
+						}
+						&:before {
+							transition: transform $duration $easeOutBack, opacity $duration;
+						}
+						&:after {
+							transition: transform 0s $duration $easeOutBack, opacity 0s $duration;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.user-menu{
+		.user-menu-list{
+			@extend .reset;
+			list-style: none;
+			li{
+				display: inline-block;
 				a{
+					display: relative;
+					color: $tlk-blue;
+					font-size: 24px;
 					display: block;
-					color: #333;
-					text-decoration: none;
+					padding: 5px 10px;
+
+					&:hover{
+						color: #555;
+					}
 				}
 			}
 		}
