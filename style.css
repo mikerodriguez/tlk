@@ -650,7 +650,8 @@ h4 {
       .main-footer .main-footer-container .information-column .social-icon .fab {
         transition: all 300ms ease-in-out; }
       .main-footer .main-footer-container .information-column .social-icon:hover {
-        transform: translateY(-5px); }
+        transform: translateY(-5px);
+        color: #FFF; }
         .main-footer .main-footer-container .information-column .social-icon:hover .fab {
           transform: translateY(-5px); }
       .main-footer .main-footer-container .information-column .social-icon:last-child {
