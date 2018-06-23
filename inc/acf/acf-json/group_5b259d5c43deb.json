@@ -81,7 +81,7 @@
                 {
                     "key": "field_5b2e340cf129c",
                     "label": "Link",
-                    "name": "",
+                    "name": "link",
                     "type": "link",
                     "instructions": "",
                     "required": 0,
@@ -170,6 +170,61 @@
                     ]
                 }
             ]
+        },
+        {
+            "key": "field_5b2e360d25be0",
+            "label": "Footer Copyright",
+            "name": "footer_copyright",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "br"
+        },
+        {
+            "key": "field_5b2e362125be1",
+            "label": "Secondary Footer Links",
+            "name": "secondary_footer_links",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5b2e362f25be2",
+                    "label": "Link",
+                    "name": "link",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                }
+            ]
         }
     ],
     "location": [
@@ -205,5 +260,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1529754807
+    "modified": 1529757794
 }
