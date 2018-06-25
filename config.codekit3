@@ -156,6 +156,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/sass\/libraries\/_woocommerce.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/libraries\/_woocommerce.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/sass\/libraries\/_wpcore.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -618,6 +631,13 @@
 		"oAP": "\/mealplan.php",
 		"oF": 0
 		},
+	"\/page.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page.php",
+		"oF": 0
+		},
 	"\/style.css": {
 		"aP": 1,
 		"bl": 0,
@@ -640,6 +660,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/templates\/header\/main-header.php",
+		"oF": 0
+		},
+	"\/templates\/loop\/page.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/templates\/loop\/page.php",
 		"oF": 0
 		}
 	},

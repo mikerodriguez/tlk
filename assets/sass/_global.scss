@@ -78,10 +78,14 @@ html, body{
 .acf-map img {
    max-width: inherit !important;
 }
-
+#site-container{
+    padding-top: 80px;
+    @include mobile{
+        padding-top: 60px;
+    }
+}
 .page-container {
     min-height: 800px;
-    padding: 20px;
 }
 .articlew-container {
     min-height: 900px;
@@ -146,3 +150,28 @@ h4{
     }
 
 }
+.page-header{
+    background-color: $tlk-blue;
+    color: #FFF;
+    padding: 50px 20px;
+    .page-title{
+        font-size: 38px;
+        font-weight: bold;
+        color: #FFF;
+        text-align: center;
+        margin: 0;
+    }
+}
+.section-heading{
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+    color: $tlk-blue;
+}
+#site-container .woocommerce{
+    padding: 30px;
+}
+
+
+
+

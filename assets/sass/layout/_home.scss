@@ -24,20 +24,24 @@
 	}
 }
 
+.home-usp{
+	background-color: #FFF;
+	color: #333;
+	padding: 50px;
 
-.home-cta-container{
-	display: flex;
-	min-height: 200px;
-	background: grey;
-	justify-content: center;
-	.cta-item{
-		background: blue;
-		flex-basis: 50%;
+}
+
+.home-cta-5050-spot{
+
+	.home-cta-5050-container{
 		display: flex;
-		padding: 25px;
-		align-content: center;
-		.inner-cta{
-			//margin: auto;
+
+		.home-cta-5050-item{
+			padding: 20px;
+			margin-bottom: 20px;
+			flex: 1;
 		}
+
 	}
+	
 }

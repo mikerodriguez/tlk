@@ -37,8 +37,8 @@ function tlk_scripts_styles() {
 
     //De-register local jQuery and register/enqueue jQuery CDN version. 
     wp_deregister_script( 'jquery' );
-    //wp_register_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js');
-    //wp_enqueue_script( 'jquery' );
+    wp_register_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js');
+    wp_enqueue_script( 'jquery' );
 
 
     // Register Styles
@@ -527,4 +527,68 @@ function custom_breadcrumbs() {
     }
        
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * Show cart contents / total Ajax
+
+add_filter( 'woocommerce_add_to_cart_fragments', 'woocommerce_header_add_to_cart_fragment' );
+
+function woocommerce_header_add_to_cart_fragment( $fragments ) {
+    global $woocommerce;
+
+    ob_start();
+
+    ?>
+    <a class="cart-customlocation" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>">
+
+        <i class="fas fa-shopping-cart"></i>
+
+        <span class="cart-count"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
+        
+        <span class="cart-total"><?php echo WC()->cart->get_cart_total(); ?></span>
+
+    </a>
+    <?php
+    $fragments['a.cart-customlocation'] = ob_get_clean();
+    return $fragments;
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -34,37 +34,39 @@
 
 
 
-<section class="home-usp"></section>
+<section class="home-usp">
+	<h2 class="section-heading">Something Something</h2>
+</section>
 
 
-<section class="home-feature-products"></section>
-
-
-<section class="home-cta-5050">
+<section class="home-feature-products">
 	<div class="wrapper">
-		<div class="home-cta-container">
-
-			<div class="cta-item">
-				<div class="inner-cta">
-					Flexible Plans <br>
-					Skip weeks, swap recipes, and cancel anytime - only order what and when you want. No commitments.
-					<br>
-					<a href="#">View our Services</a>
-				</div>
-			</div>
-
-			<div class="cta-item">
-				<div class="inner-cta">
-					newsletter
-				</div>
-			</div>
-
-		</div>
+		<?php echo do_shortcode('[products limit="4" columns="4" orderby="id" order="DESC" visibility="visible"]'); ?>
 	</div>
 </section>
 
 
-<section class="home-cta"></section>
+<section class="home-cta-5050-spot">
+
+	<div class="home-cta-5050-container wrapper">
+		<div class="home-cta-5050-item item1">
+			<h2>left</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum iste architecto ea cupiditate natus nobis quasi, quae repellat nostrum sed impedit sit tempore, enim, cumque consequuntur autem molestias voluptatum ipsum.</p>
+		</div>
+		<div class="home-cta-5050-item item1">
+			<h2>right</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum iste architecto ea cupiditate natus nobis quasi, quae repellat nostrum sed impedit sit tempore, enim, cumque consequuntur autem molestias voluptatum ipsum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non aspernatur eum, a unde quasi enim!</p>
+
+		</div>
+	</div>
+
+</section>
+
+
+<section class="home-cta">
+	above footer cta
+</section>
 
 
 
