@@ -9,28 +9,49 @@
 
 
 
+<?php if ( have_rows( 'billboard' ) ) : ?>	
 
-<section class="home-billboard">
-	
+	<?php while ( have_rows( 'billboard' ) ) : the_row(); ?>
 
-	<div class="wrapper">
+		<?php $home_page_image = get_sub_field( 'home_page_image' ); ?>
 
-		<div class="billboard-content">
-		
-			<h1>TOP OF THE FOOD CHAIN</h1>
-			<div class="billboard-summary">Deliciously healthy prepared meals delivered right to your door!</div>
+		<section class="home-billboard">
 
-			<div class="billboard-button">
-				<a href="#">Learn More</a>
+			<span class="arrow-down">arrow</span>
+			
+			<img src="<?php echo $home_page_image['url']; ?>" class="hero-image">
+
+			<div class="wrapper">
+				<div class="billboard-content" style="color: <?php the_sub_field( 'text_color' ); ?>">
+				
+					<h1 style="color: <?php the_sub_field( 'text_color' ); ?>"><?php the_sub_field( 'headline' ); ?></h1>
+					<div class="billboard-summary"><?php the_sub_field( 'summary' ); ?></div>
+
+					<?php $link = get_sub_field( 'link' ); ?>
+					<?php if ( $link ) { ?>
+					<div class="billboard-button">
+						<a href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>" class="btn btn-<?php the_sub_field( 'button_color' ); ?>"><?php echo $link['title']; ?></a>
+					</div>
+					<?php } ?>
+
+				</div>
 			</div>
 
-		</div>
+		</section>
+	<?php endwhile; ?>
 
 
-	</div>
 
 
-</section>
+<?php endif; ?>
+
+
+
+
+
+
+
+
 
 
 

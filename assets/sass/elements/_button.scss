@@ -1,0 +1,31 @@
+.btn{
+	display: inline-block;
+	padding: 12px 15px;
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: bold;
+	transition: all 250ms ease;
+	border-radius: 2px;
+}
+
+.btn-blue{
+	background-color: $tlk-blue;
+	color: #FFF;
+	&:hover{
+		background-color: darken($tlk-blue, 8%);
+	}
+}
+.btn-black{
+	background-color: #000;
+	color: #FFF;
+	&:hover{
+		background-color: #444;
+	}
+}
+.btn-white{
+	background-color: #FFF;
+	color: #333;
+	&:hover{
+		background-color: #efefef;
+	}
+}
