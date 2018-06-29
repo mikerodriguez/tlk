@@ -15,9 +15,9 @@
 
 		<?php $home_page_image = get_sub_field( 'home_page_image' ); ?>
 
-		<section class="home-billboard">
+		<section class="home-billboard home-spot">
 
-			<span class="arrow-down">arrow</span>
+			<span class="arrow-down"><i class="fas fa-arrow-alt-circle-down"></i></span>
 			
 			<img src="<?php echo $home_page_image['url']; ?>" class="hero-image">
 
@@ -30,7 +30,7 @@
 					<?php $link = get_sub_field( 'link' ); ?>
 					<?php if ( $link ) { ?>
 					<div class="billboard-button">
-						<a href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>" class="btn btn-<?php the_sub_field( 'button_color' ); ?>"><?php echo $link['title']; ?></a>
+						<a href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>" class="btn btn-<?php the_sub_field( 'button_color' ); ?> btn-shadow"><?php echo $link['title']; ?></a>
 					</div>
 					<?php } ?>
 
@@ -41,8 +41,6 @@
 	<?php endwhile; ?>
 
 
-
-
 <?php endif; ?>
 
 
@@ -50,12 +48,7 @@
 
 
 
-
-
-
-
-
-<section class="home-usp">
+<section class="home-usp home-spot">
 	<h2 class="section-heading">Something Something</h2>
 </section>
 
@@ -67,7 +60,7 @@
 </section>
 
 
-<section class="home-cta-5050-spot">
+<section class="home-cta-5050-spot home-spot">
 
 	<div class="home-cta-5050-container wrapper">
 		<div class="home-cta-5050-item item1">
@@ -85,7 +78,7 @@
 </section>
 
 
-<section class="home-cta">
+<section class="home-cta home-spot">
 	above footer cta
 </section>
 

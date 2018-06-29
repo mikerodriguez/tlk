@@ -1,3 +1,5 @@
+/*
+
 .btn{
 	display: inline-block;
 	padding: 12px 15px;
@@ -6,6 +8,32 @@
 	font-weight: bold;
 	transition: all 250ms ease;
 	border-radius: 2px;
+}
+
+*/
+
+
+
+
+.btn{
+	-webkit-apperance: none;
+    -moz-apperance: none;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px 30px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 27px;
+    position: relative;
+    cursor: pointer;
+    vertical-align: top;
+    outline: none;
+    color: #fff;
+    transition: box-shadow .2s,background-color .1s ease-in-out;
+	text-decoration: none;
+	z-index: 2;
 }
 
 .btn-blue{
@@ -27,5 +55,11 @@
 	color: #333;
 	&:hover{
 		background-color: #efefef;
+	}
+}
+.btn-shadow{
+	box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.3);
+	&:hover{
+		box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.3);
 	}
 }

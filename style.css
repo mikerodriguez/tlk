@@ -803,10 +803,20 @@ h4 {
   .home-billboard .arrow-down {
     position: absolute;
     z-index: 3;
-    background: #FFF;
-    color: #000;
-    bottom: 0;
-    left: 50%; }
+    color: #FFF;
+    bottom: -18px;
+    left: 50%;
+    font-size: 38px;
+    background-color: #54C2E5;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    line-height: 38px;
+    box-shadow: 0 4px 19px 0 rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-in-out; }
+    .home-billboard .arrow-down:hover {
+      box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.3);
+      cursor: pointer; }
   .home-billboard .hero-image {
     position: absolute;
     top: 0;
@@ -830,13 +840,13 @@ h4 {
           width: 100%;
           text-align: center; } }
       .home-billboard .wrapper .billboard-content h1 {
-        font-size: 42px;
+        font-size: 52px;
         font-weight: bold;
         letter-spacing: -1px;
         text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6); }
       .home-billboard .wrapper .billboard-content .billboard-summary {
         margin-bottom: 15px;
-        font-size: 18px;
+        font-size: 21px;
         text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6); }
 
 .home-usp {
@@ -977,14 +987,38 @@ h4 {
 .pricing-button.is-featured:active {
   background-color: #269aff; }
 
+/*
+
+.btn{
+	display: inline-block;
+	padding: 12px 15px;
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: bold;
+	transition: all 250ms ease;
+	border-radius: 2px;
+}
+
+*/
 .btn {
+  -webkit-apperance: none;
+  -moz-apperance: none;
+  text-align: center;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 10px 30px;
   display: inline-block;
-  padding: 12px 15px;
-  text-decoration: none;
-  font-size: 15px;
   font-weight: bold;
-  transition: all 250ms ease;
-  border-radius: 2px; }
+  font-size: 17px;
+  line-height: 27px;
+  position: relative;
+  cursor: pointer;
+  vertical-align: top;
+  outline: none;
+  color: #fff;
+  transition: box-shadow .2s,background-color .1s ease-in-out;
+  text-decoration: none;
+  z-index: 2; }
 
 .btn-blue {
   background-color: #54C2E5;
@@ -1003,3 +1037,8 @@ h4 {
   color: #333; }
   .btn-white:hover {
     background-color: #efefef; }
+
+.btn-shadow {
+  box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.3); }
+  .btn-shadow:hover {
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.3); }
