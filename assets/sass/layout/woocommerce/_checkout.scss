@@ -1,0 +1,97 @@
+.woocommerce-checkout{
+	
+	/* #site-container .woocommerce{
+		padding: 0px;
+	}*/
+
+	.woocommerce{
+		
+
+		.woocommerce-form-login-toggle{
+
+		}
+		.woocommerce-form-coupon-toggle{
+
+		}
+
+		.checkout{
+			font-size: 14px;
+			@extend .clear;
+
+			#customer_details{
+				float: left;
+				width: 60%;
+				
+				@include mobile{
+					width: 100%;
+					float: none;
+				}
+				.col-1, .col-2{
+					float: none;
+					width: 100%;
+				}
+				.woocommerce-billing-fields{
+					border: 1px solid red;
+					padding: 25px;
+					h3{
+						@extend .checkout-heading;
+					}
+				}
+				.woocommerce-shipping-fields{
+					border: 1px solid green;
+					margin-bottom: 25px;
+					padding: 25px;
+					h3{
+						@extend .checkout-heading;
+
+					}
+				}
+				.woocommerce-additional-fields{
+					border: 1px solid orange;
+					margin-bottom: 20px;
+				}
+			}
+			#order_review{
+				padding: 25px;
+				float: left;
+				width: 40%;
+				background: #efefef;
+				border-radius: 3px;
+				@include mobile{
+					width: 100%;
+					float: none;
+				}
+
+			}
+
+		}
+
+	}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

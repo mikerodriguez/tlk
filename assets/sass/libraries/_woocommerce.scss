@@ -10,3 +10,29 @@
 .form-row.woocommerce-validated select {
     border:1px solid green;
 }
+
+
+.woocommerce form{
+	.form-row{
+		margin-bottom: 15px;
+	}
+	label{
+		font-weight: bold;
+		color: #333;
+	}
+	.input-text{
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		background-color: #efefef;
+		color: #666;
+		border: 2px solid  $color-gray-lines;
+		padding: 10px;
+		font-size: 16px;
+		transition: background-color 250ms ease-in;
+		&:focus{
+			background-color: #FFF;
+			color: #333;
+		}
+	}
+}

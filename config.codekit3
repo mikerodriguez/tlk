@@ -143,6 +143,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/sass\/layout\/woocommerce\/_checkout.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/layout\/woocommerce\/_checkout.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/sass\/libraries\/_font-awesome.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -688,6 +701,20 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/templates\/loop\/page.php",
+		"oF": 0
+		},
+	"\/woocommerce\/checkout\/form-billing.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/woocommerce\/checkout\/form-billing.php",
+		"oF": 0
+		},
+	"\/woocommerce\/checkout\/form-checkout.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/woocommerce\/checkout\/form-checkout.php",
 		"oF": 0
 		}
 	},
