@@ -19,6 +19,16 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/assets\/js\/libraries\/test.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/libraries\/test-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/assets\/js\/scripts-min.js": {
 		"ft": 64,
 		"ma": 0,
@@ -1134,7 +1144,7 @@
 		},
 	"esLintConfigFileHandlingType": 0,
 	"esLintECMAVersion": 7,
-	"esLintEnvironmentsMask": 1,
+	"esLintEnvironmentsMask": 17,
 	"esLintRules": {
 		"accessor-pairs": {
 			"active": 0,

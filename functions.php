@@ -1,6 +1,6 @@
 <?php 
 /**
- * ENTA Theme functions and definitions
+ * TLK Theme functions and definitions
  *
  * @package enta
  */
@@ -530,7 +530,15 @@ function custom_breadcrumbs() {
 
 
 
+add_filter( 'woocommerce_add_to_cart_fragments', 'tlk_cart_count_fragments', 10, 1 );
 
+function tlk_cart_count_fragments( $fragments ) {
+    
+    $fragments['span.header-cart-count'] = '<span class="cart-count header-cart-count">' . WC()->cart->get_cart_contents_count() . '</span>';
+    
+    return $fragments;
+    
+}
 
 
 

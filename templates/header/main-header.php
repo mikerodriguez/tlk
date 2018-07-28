@@ -15,7 +15,7 @@
 				<li class="user-menu-cart">
 					<a class="cart-customlocation" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>">
 						<i class="fas fa-shopping-cart"></i>
-						<span class="cart-count"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
+						<span class="cart-count header-cart-count"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
 						<span class="cart-total"><?php echo WC()->cart->get_cart_total(); ?></span>
 					</a>
 				</li>

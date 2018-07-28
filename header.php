@@ -19,14 +19,8 @@
 
 <body <?php body_class(); ?>>
 
-
-
 <?php get_template_part('templates/header/main-header'); ?>
 
-
- 
-
 <div class="site-overlay"></div>
-
 
 <main id="site-container">
